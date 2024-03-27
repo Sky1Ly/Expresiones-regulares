@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
+
 <body>
-   <label for="animal">Buscador de razas de Perros y gatos</label>
-   <input type="text" class="animal" placeholder="Ingresa el texto aquí">
-   <input type="button" id="buscar" value="Buscar">      
+   <!--Busca El Nombre Gato o Perro-->
+   <div>
+      <label for="animal">Buscador de razas de Perros y gatos</label>
+      <input type="text" class="animal" placeholder="Ingresa el texto aquí">
+      <input type="button" id="buscar" value="Buscar">
+      <script src="./assets/js/script.js"></script>
+   </div>
+
+   <!--Todas las palabras permitidas, los numeros no permitidos-->
+   <div>
+      <label for="lugar">Ingresa tu dirección: </label>
+      <input type="text" class="lugar" placeholder="Ingresa la dirección">
+      <input type="button" id="enviar" value="Enviar">
+      <script src="script.js"></script>
+   </div>
+
+   <!--Validación de formulario-->
+   <form action="#" name="form" id="form">
+      <div>
+         <label for="">Nombre</label>
+         <input type="text" class="textNombre">
+         <span class="errorNombre"></span>
+      </div>
+      <div>
+         <label for="">Teléfono</label>
+         <input type="text" class="textTelefono">
+         <span class="errorTelefono"></span>
+      </div>
+      <div>
+         <label for="">Email</label>
+         <input type="text" class="textEmail">
+         <span class="errorEmail"></span>
+      </div>
+      <button type="submit">Enviar</button>
+      <p class="resultado"></p>
+   </form>
+
+
    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
